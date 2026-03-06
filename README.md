@@ -1,418 +1,109 @@
-# 🧠 Handwritten Digit Recognition using CNN
+🧠 Handwritten Digit Recognition using CNN
 
-# 
 
-# 
 
-# A Deep Learning project that recognizes handwritten digits (0–9) using a Convolutional Neural Network (CNN) trained on the MNIST dataset.
 
-# 
 
-# The model learns visual patterns such as edges, curves, and shapes in handwritten numbers and accurately classifies them.
 
-# 
+A Machine Learning project that recognizes handwritten digits (0–9) using a Convolutional Neural Network (CNN) trained on the MNIST dataset.
 
-# 📌 Project Overview
+📌 Overview
 
-# 
+This project demonstrates how Deep Learning can automatically recognize handwritten digits from images.
+CNN models learn patterns such as edges, curves, and shapes to accurately classify numbers.
 
-# Handwritten Digit Recognition is a fundamental task in Machine Learning and Computer Vision. The objective of this project is to develop a deep learning model capable of automatically identifying handwritten digits from images.
+Applications
 
-# 
+🏦 Bank cheque processing
 
-# This project demonstrates how Convolutional Neural Networks (CNNs) can effectively perform image classification tasks by extracting meaningful features from image data.
+📮 Postal code recognition
 
-# 
+📝 Form digitization
 
-# Such recognition systems are widely used in real-world applications such as:
+📄 Document processing systems
 
-# 
+📊 Dataset
 
-# 🏦 Bank cheque processing
+The model is trained using the MNIST dataset.
 
-# 
+Dataset Details
 
-# 📮 Postal code recognition
+70,000 handwritten digit images
 
-# 
+Image size: 28 × 28 pixels
 
-# 📝 Digitizing handwritten forms
+Classes: 0–9
 
-# 
+Additional datasets used:
 
-# 📄 Document processing systems
+Train Dataset
+https://www.kaggle.com/competitions/digit-recognizer/data?select=train.csv
 
-# 
+Test Dataset
+https://www.kaggle.com/competitions/digit-recognizer/data?select=test.csv
 
-# 🤖 Automated number recognition
+⚙️ Technologies Used
 
-# 
+Python
 
-# 📊 Dataset
+TensorFlow / Keras
 
-# 
+NumPy
 
-# This project uses the MNIST handwritten digit dataset, one of the most popular datasets in machine learning research.
+Pandas
 
-# 
+Scikit-learn
 
-# Dataset Details
+Matplotlib
 
-# Property	Value
+Seaborn
 
-# Total Images	70,000
+Jupyter Notebook
 
-# Training Images	60,000
+🧠 Model
 
-# Test Images	10,000
+The system uses a Convolutional Neural Network (CNN) consisting of:
 
-# Image Size	28 × 28 pixels
+Convolution layers for feature extraction
 
-# Classes	Digits 0–9
+Batch normalization
 
-# 
+Max pooling layers
 
-# Additional datasets are taken from Kaggle:
+Fully connected dense layers
 
-# 
+Softmax output layer for digit classification
 
-# Train Dataset
+🚀 How to Run
 
-# https://www.kaggle.com/competitions/digit-recognizer/data?select=train.csv
+1️⃣ Install required libraries
 
-# 
+pip install numpy pandas matplotlib seaborn tensorflow scikit-learn
 
-# Test Dataset
+2️⃣ Download train.csv and test.csv from Kaggle and place them in the project folder.
 
-# https://www.kaggle.com/competitions/digit-recognizer/data?select=test.csv
+3️⃣ Start Jupyter Notebook
 
-# 
+jupyter notebook
 
-# The training dataset is used to train and validate the CNN model, while the test dataset is used to generate predictions.
+4️⃣ Open and run:
 
-# 
+SourceCode.ipynb
+📈 Output
 
-# ⚙️ Technologies Used
+The model achieves high accuracy in recognizing handwritten digits and generates:
 
-# 
+Accuracy graphs
 
-# The following tools and libraries were used in the development of this project:
+Loss graphs
 
-# 
+Confusion matrix
 
-# 🐍 Python
+Digit prediction results
 
-# 
+👨‍💻 Author
 
-# 🧠 TensorFlow
+Anirudh Ganji
+Computer Science – 2nd Year
 
-# 
-
-# 🔧 Keras
-
-# 
-
-# 📊 NumPy
-
-# 
-
-# 📁 Pandas
-
-# 
-
-# 📈 Matplotlib
-
-# 
-
-# 🔍 Seaborn
-
-# 
-
-# 📚 Scikit-learn
-
-# 
-
-# 📓 Jupyter Notebook
-
-# 
-
-# These libraries help in data preprocessing, model development, visualization, and performance evaluation.
-
-# 
-
-# 🧠 CNN Model Architecture
-
-# 
-
-# The Convolutional Neural Network used in this project consists of multiple layers that help extract features and classify images.
-
-# 
-
-# Model Structure
-
-# Input Image (28x28x1)
-
-# &nbsp;       ↓
-
-# Convolution Layer
-
-# &nbsp;       ↓
-
-# ReLU Activation
-
-# &nbsp;       ↓
-
-# Batch Normalization
-
-# &nbsp;       ↓
-
-# Max Pooling
-
-# &nbsp;       ↓
-
-# Convolution Layer
-
-# &nbsp;       ↓
-
-# Batch Normalization
-
-# &nbsp;       ↓
-
-# Flatten Layer
-
-# &nbsp;       ↓
-
-# Dense Layer
-
-# &nbsp;       ↓
-
-# Dense Layer
-
-# &nbsp;       ↓
-
-# Softmax Output Layer
-
-# 
-
-# The CNN model learns hierarchical features from handwritten digit images and predicts the corresponding digit class.
-
-# 
-
-# 🔄 Project Workflow
-
-# Dataset Collection
-
-# &nbsp;       ↓
-
-# Data Preprocessing
-
-# &nbsp;       ↓
-
-# Image Reshaping
-
-# &nbsp;       ↓
-
-# Normalization
-
-# &nbsp;       ↓
-
-# Label Encoding
-
-# &nbsp;       ↓
-
-# CNN Model Creation
-
-# &nbsp;       ↓
-
-# Model Training
-
-# &nbsp;       ↓
-
-# Model Evaluation
-
-# &nbsp;       ↓
-
-# Prediction Generation
-
-# 📂 Project Structure
-
-# HandWrittenDigits\_Classification
-
-# │
-
-# ├── SourceCode.ipynb        # CNN implementation notebook
-
-# ├── train.csv               # Training dataset
-
-# ├── test.csv                # Testing dataset
-
-# ├── saved\_model             # Saved trained model
-
-# └── README.md               # Project documentation
-
-# 🚀 How to Run the Project
-
-# 1️⃣ Install Required Libraries
-
-# pip install numpy pandas matplotlib seaborn tensorflow scikit-learn
-
-# 2️⃣ Download Dataset
-
-# 
-
-# Download the following files from Kaggle:
-
-# 
-
-# train.csv
-
-# 
-
-# test.csv
-
-# 
-
-# Place them inside the project folder.
-
-# 
-
-# 3️⃣ Start Jupyter Notebook
-
-# jupyter notebook
-
-# 4️⃣ Open the Notebook
-
-# 
-
-# Open the file:
-
-# 
-
-# SourceCode.ipynb
-
-# 5️⃣ Run the Project
-
-# 
-
-# Run all cells sequentially to:
-
-# 
-
-# Train the CNN model
-
-# 
-
-# Evaluate model performance
-
-# 
-
-# Generate predictions
-
-# 
-
-# 📈 Model Performance
-
-# 
-
-# The CNN model achieves high accuracy in handwritten digit classification.
-
-# 
-
-# Evaluation Metrics
-
-# 
-
-# Accuracy
-
-# 
-
-# Loss
-
-# 
-
-# Confusion Matrix
-
-# 
-
-# Classification Report
-
-# 
-
-# Visualization graphs such as training accuracy, validation accuracy, training loss, and validation loss help analyze model performance.
-
-# 
-
-# 📷 Visualizations
-
-# 
-
-# The project generates several visual outputs, including:
-
-# 
-
-# Sample handwritten digit images
-
-# 
-
-# Training vs validation accuracy graphs
-
-# 
-
-# Training vs validation loss graphs
-
-# 
-
-# Confusion matrix visualization
-
-# 
-
-# Prediction result plots
-
-# 
-
-# These visualizations help understand how well the model performs.
-
-# 
-
-# 🎯 Applications
-
-# 
-
-# Handwritten digit recognition systems are used in many practical applications:
-
-# 
-
-# Bank cheque verification
-
-# 
-
-# Postal mail sorting
-
-# 
-
-# Automated document processing
-
-# 
-
-# Form digitization
-
-# 
-
-# Intelligent data entry systems
-
-# 
-
-# 👨‍💻 Author
-
-# 
-
-# Name: Anirudh Ganji
-
-# Department: Computer Science
-
-# Year: 2nd Year
-
-# 
-
-# ⭐ This project demonstrates the practical application of Deep Learning techniques for image classification tasks.
-
+⭐ A simple demonstration of Deep Learning for image classification.
