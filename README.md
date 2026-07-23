@@ -1,4 +1,4 @@
-🧠 Handwritten Digit Recognition using C
+🧠 Handwritten Digit Recognition using CNN
 
 
 
